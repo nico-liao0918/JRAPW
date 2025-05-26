@@ -9,14 +9,14 @@
         />
         <meta 
             name="description" 
-            content="Explore James' online resume and portfolio, showcasing his professional experience, skills, and creative work."
+            content="Contact James through this form for inquiries, collaborations, or questions related to his resume and portfolio."
         />
         <meta 
             name="keywords" 
-            content="James, Resume, Portfolio, Web Developer, Designer, Professional, Projects, Skills"
+            content="contact, message, portfolio, resume, James, web developer, communication"
         />
         <!--
-        <meta http-equiv="refresh" content="0; url=/error/401site.html">
+        <meta http-equiv="refresh" content="0; url=errorpage/401site.html">
         -->
         <title>JRAP WEBSITE</title>
         <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
@@ -59,19 +59,22 @@
 
         <main>
             <section>
-                <div>
-                    <h2>Welcome</h2>
-                    <p>
-                        This is my online resume and portfolio showcasing my professional journey, skills, and creative work.
-                    </p>
-                </div>
+                <h2>Contact Me</h2>
             </section>
             <section>
                 <div>
-                    <h2>Explore the Site</h2>
-                    <p>
-                        You may use the navigation bar above for your convenience.
-                    </p>
+                    <form action="https://formspree.io/f/myzyeedr" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -80,8 +83,7 @@
             <section>
                 <div>
                     <p>
-                        Copyright &copy; 2024 James Resume 
-                        and Portfolio. All Rights Reserved.
+                        Copyright &copy; 2024 James Resume and Portfolio. All Rights Reserved.
                     </p>
                 </div>
             </section>
