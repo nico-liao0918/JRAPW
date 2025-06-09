@@ -10,6 +10,11 @@ body.dark * {
     color: white;
 }
 
+header.dark {
+    background-color: black;
+    color: white;
+}
+
 header {
     margin: 5px;
     padding: 5px;
@@ -72,6 +77,7 @@ nav ul li {
 
 body.dark {
     background-color: black;
+    color: white;
 }
 
 .popup {
