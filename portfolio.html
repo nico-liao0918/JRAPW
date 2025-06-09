@@ -62,6 +62,16 @@
                 <button id="dark-toggle" class="button">Toggle Dark Mode</button>
             </section>
             <section>
+                <div id="popup" class="popup hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
                 <div>
                     <h1>Portfolio</h1>
                     <p>Below is my Portfolio.</p>
@@ -72,30 +82,7 @@
                     <h2>Current Projects</h2>
                 </div>
             </section>
-            <section class="containers">
-                <div class="contents">
-                    <h3>No Current Projects</h3>
-                    <p>Not currently doing any projects</p>
-                    <p>You may ask me for any front-end development serivces or any other services.</p>
-                    <p>You can view my services on
-                        <a 
-                            href="rpindex.html" 
-                            target="_blank"
-                            class="button">
-                                This Website
-                        </a>
-                    </p>
-                    <p>You can also view my services
-                        <a 
-                            href="jfsindex.html" 
-                            target="_blank" 
-                            class="button">
-                                Here
-                        </a>
-                    </p>
-                </div>
-            </section>
-            
+
             <!--
             <section class="containers">
                 <div class="contents">
@@ -121,6 +108,36 @@
                 </div>
             </section>
             -->
+            
+            <section class="containers">
+                <div class="contents">
+                    <h3>No Current Projects</h3>
+                    <p>Not currently doing any projects</p>
+                    <p>You may ask me for any front-end development serivces or any other services.</p>
+                    <p>You can view my services on
+                        <a 
+                            href="rpindex.html" 
+                            target="_blank"
+                            class="button">
+                                This Website
+                        </a>
+                    </p>
+                    <p>You can also view my services
+                        <a 
+                            href="jfsindex.html" 
+                            target="_blank" 
+                            class="button">
+                                Here
+                        </a>
+                    </p>
+                </div>
+            </section>
+            
+            <section>
+                <div>
+                    <h2>Finished Projects</h2>
+                </div>
+            </section>
 
             <!--
             <section class="containers">
@@ -148,11 +165,6 @@
             </section>
             -->
 
-            <section>
-                <div>
-                    <h2>Finished Projects</h2>
-                </div>
-            </section>
             <section class="containers">
                 <div class="contents">
                     <h3>James Portfolio and Resume Website</h3>
@@ -303,7 +315,7 @@
                         <li>
                             Link: 
                             <p><a 
-                                    href="/error/errorpage.html"
+                                    href="/error/error.html"
                                     class="button">
                                         Check It Out
                                 </a>
@@ -327,7 +339,7 @@
                         <li>
                             Link: 
                             <p><a 
-                                    href="/error/errorpage.html"
+                                    href="/error/error.html"
                                     class="button">
                                         Check It Out
                                 </a>
@@ -351,7 +363,7 @@
                         <li>
                             Link: 
                             <p><a 
-                                    href="/error/errorpage.html"
+                                    href="/error/error.html"
                                     class="button">
                                         Check It Out
                                 </a>
@@ -378,5 +390,6 @@
             </section>
         </footer>
         <script src="toggle.js"></script>
+        <script src="popup.js" defer></script>
     </body>
 </html>
