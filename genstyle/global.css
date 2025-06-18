@@ -106,30 +106,40 @@ nav ul li {
   display: none;
 }
 
+#menu-list {
+    display: block;
+}
+
 
 /* ============================= */
 /* MOBILE & TABLET STYLES (up to 1024px) */
 /* ============================= */
 
 @media (max-width: 1024px) {
-  #menu-toggle {
-    display: block;
-  }
+    #menu-toggle {
+        display: block;
+        margin: 1rem auto; /* this centers it horizontally */
+        font-size: 1.5rem;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 
-  #menu-list.hidden {
-    display: none;
-  }
+    #menu-list.hidden {
+        display: none;
+    }
 
-  #menu-list {
-    display: block; /* when not hidden */
-    text-align: center;
-  }
+    #menu-list {
+        display: block; 
+        text-align: center;
+    }
 
-  #menu-list li {
-    display: block;
-    margin: 10px 0;
-    transition: all 0.3s ease;
-  }
+    #menu-list li {
+        display: block;
+        margin: 10px 0;
+        transition: all 0.3s ease;
+    }
 }
 
 
