@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!--
+        <meta http-equiv="refresh" content="0; url=./error/error.html">
+        -->
+        <title>JRAP WEBSITE</title>
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+        <link rel="stylesheet" href="styles/repo.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James' Resume and Portfolio
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Resume</h2>
+                    <p>Check out my Resume below.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Professional Summary</h2>
+            </section>
+            <section class="containers">
+                <div class="contents">
+                    <p>
+                        I am a graduate of Business Administration major in Export Management from De La Salle – College of Saint Benilde. 
+                        Knowledgeable in logistical processes, administrative tasks, and basic accounting. 
+                        I am eager to apply my knowledge in a professional setting and continuously develop my skills. 
+                        I am highly motivated, adaptable, and excited to contribute to a dynamic organization.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Education</h2>
+                </div>
+            </section>
+            <section class="containers">
+                <div class="contents">
+                    <h3>De La Salle – College of Saint Benilde</h3>
+                    <p>Bachelor of Science in Business Administration, Major in Export Management</p>
+                    <p>Graduated: 2022</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Work Experience</h2>
+                </div>
+            </section>
+            <section class="containers">
+                <div class="contents">
+                    <h3>ATG SEALANDAIR Freight Forwarding Company</h3>
+                    <h4>Manila, Philippines</h4>
+                    <h4>Intern <i>(Documentation Staff)</i></h4>
+                    <h4>May 2022 -- August 2022</h4>
+                    <ul>
+                        <li>
+                            Assisted in preparing import and export documents, 
+                            ensuring compliance with regulatory requirements
+                        </li>
+                        <li>
+                            Computed tariffs, 
+                            VAT, 
+                            duties for clients, 
+                            contributing to accurate cost calculations
+                        </li>
+                        <li>
+                            Encoded documents on the Bureau of Customs (BOC) 
+                            portal for timely processing
+                        </li>
+                        <li>
+                            Submitted requests for inspections and 
+                            processed shipping line documents to ensure 
+                            smooth logistics operations
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="containers">
+                <div class="contents">
+                    <h3>Martha’s Home</h3>
+                    <h4>Parañaque, Philippines</h4>
+                    <h4>Intern <i>(Clerk Staff)</i></h4>
+                    <h4>January 2018 -- March 2018</h4>
+                    <ul>
+                        <li>
+                            Managed company resources efficiently 
+                            to support daily operations
+                        </li>
+                        <li>
+                            Assisted with basic accounting and 
+                            financial allocations to help maintain budgetary
+                            control
+                        </li>
+                        <li>
+                            Learned and applied administrative and 
+                            clerical tasks, enhancing overall team efficiency
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="containers">
+                <div class="contents">
+                    <a 
+                        href="/assets/James Liao Resume.pdf" 
+                        download class="button" 
+                        rel="noopener noreferrer">
+                            Download Resume (PDF)
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2024 
+                        James Resume and Portfolio Website. 
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
+</html>
