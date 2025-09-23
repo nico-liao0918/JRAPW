@@ -8,7 +8,6 @@
     padding: 0;
 }
 
-
 /* ============================= */
 /*         DARK MODE            */
 /* ============================= */
@@ -34,7 +33,6 @@ footer.dark {
 body.dark #menu-toggle {
   color: white;
 }
-
 
 /* ============================= */
 /*            HEADER            */
@@ -72,7 +70,6 @@ header a {
     text-decoration: none;
 }
 
-
 /* ============================= */
 /*         NAVIGATION           */
 /* ============================= */
@@ -109,7 +106,6 @@ nav ul li {
 #menu-list {
     display: block;
 }
-
 
 /* ============================= */
 /* MOBILE & TABLET STYLES (up to 1024px) */
@@ -165,7 +161,6 @@ nav ul li {
       }
 }
 
-
 /* ============================= */
 /*             MAIN             */
 /* ============================= */
@@ -202,7 +197,6 @@ main ul li {
     text-decoration: none;
 }
 
-
 /* ============================= */
 /*            FOOTER            */
 /* ============================= */
@@ -222,7 +216,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
 
 /* ============================= */
 /*         BUTTON STYLE         */
@@ -253,8 +246,6 @@ footer a:hover {
 .buton:hover {
     background-color: green;
 }
-
-
 
 /* ============================= */
 /*        FORM STYLING          */
@@ -287,7 +278,6 @@ form button {
 form button:hover {
     background-color: green;
 }
-
 
 /* ============================= */
 /*       POPUP / MODAL STYLE    */
