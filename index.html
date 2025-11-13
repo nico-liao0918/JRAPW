@@ -1,85 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JRAP — James' Resume & Portfolio</title>
-  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="refresh" content="0; url=error.html">
+        <title>JRAP WEBSITE</title>
+        <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="genstyle/global.css">
+        <link rel="stylesheet" href="styles/repo.css">
+    </head>
 
-  <!-- Base CSS (single file for template) -->
-  <link rel="stylesheet" href="genstyles/global.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a 
+                        href="index.html">
+                            James' Resume and Portfolio
+                    </a>
+                </h1>
+            </div>
+            <div>
+                <nav>
+                    <button id="menu-toggle">☰ Menu</button>
+                    <ul id="menu-list" class="hidden">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1><a href="index.html">James — Resume & Portfolio</a></h1>
-        <p class="tagline">Professional journey, skills & creative work</p>
-      </div>
+        <main>
+            <section>
+                <button id="dark-toggle" class="button">Toggle Dark Mode</button>
+            </section>
+            <section>
+                <div id="popup" class="popup_hidden">
+                  <div class="popup-box">
+                    <h3>Stay in the Loop!</h3>
+                    <p>Subscribe to receive updates, newsletters, newspapers, or announcements.</p>
+                    <button onclick="location.href='subscribe.html'">Yes, Sign Me Up</button>
+                    <button onclick="closePopup()">No, Thanks</button>
+                  </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Welcome</h2>
+                    <p>
+                        This is my online resume and portfolio showcasing my professional journey, skills, and creative work.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Explore the Site</h2>
+                    <p>
+                        You may use the navigation bar above for your convenience.
+                    </p>
+                </div>
+            </section>
+        </main>
 
-      <div class="controls">
-        <button id="dark-toggle" class="icon-btn" aria-pressed="false" title="Toggle dark mode">🌙</button>
-        <button id="menu-toggle" class="icon-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button>
-      </div>
-    </div>
-
-    <nav id="main-nav" class="site-nav" role="navigation" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main" class="container" role="main">
-    <!-- popup (hidden by default) -->
-    <div id="popup" class="popup" aria-hidden="true">
-      <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-        <h3 id="popup-title">Stay in the Loop!</h3>
-        <p>Subscribe to receive updates, newsletters, or announcements.</p>
-        <div class="popup-actions">
-          <a class="button" href="subscribe.html">Yes, Sign Me Up</a>
-          <button class="button button--muted" id="close-popup">No, Thanks</button>
-        </div>
-      </div>
-    </div>
-
-    <section class="hero">
-      <h2>Welcome</h2>
-      <p>This is my online resume and portfolio showcasing my professional journey, skills, and creative work.</p>
-      <p><a class="button" href="portfolio.html">View Portfolio</a></p>
-    </section>
-
-    <section class="info-grid">
-      <article>
-        <h3>Explore the Site</h3>
-        <p>Use the navigation above to visit About, Resume, Portfolio and Contact pages.</p>
-      </article>
-
-      <aside>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Download Resume (PDF)</a></li>
-          <li><a href="subscribe.html">Subscribe</a></li>
-        </ul>
-      </aside>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>Copyright &copy; <span id="year"></span> James — Resume and Portfolio. All Rights Reserved.</p>
-      <p><a href="https://github.com/nico-liao0918/JRAPW" rel="noopener" target="_blank">Repo</a></p>
-    </div>
-  </footer>
-
-  <!-- Script: main behaviors (menu, dark mode, popup) -->
-  <script src="js/main.js" defer></script>
-</body>
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2024 
+                        James Resume and Portfolio Website. 
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <script src="toggle.js"></script>
+        <script src="menu.js"></script>
+        <script src="popup.js" defer></script>
+    </body>
 </html>
